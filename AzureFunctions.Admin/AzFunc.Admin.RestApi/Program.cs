@@ -27,8 +27,10 @@ namespace AzFunc.Admin.RestApi
             
             var status = GetHostStatusAsync(siteBaseUrl).Result;
 
-            Console.WriteLine($"Token: {token}");
+
+            Console.WriteLine("Done");
         }
+
 
         static async Task<HostStatus> GetHostStatusAsync(string siteBaseUrl)
         {
